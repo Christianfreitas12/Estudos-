@@ -16,7 +16,7 @@ const [produtos, SetProdutos] = useState([]);
             imagem: "https://http2.mlstatic.com/D_NQ_NP_755842-MLB47599396706_092021-O.webp",
             titulo: "PC Gamer",
             preco: "R$ 12.584,00",
-            descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
+            descricao: "Esse PC pode trazer para você as melhores sensações que você ira sentir!!",
             especificacoes: "Esse produto é de ótima qualidade você não vai se arrepender jamais na sua vidinha!!"
           },
           {
@@ -48,6 +48,14 @@ const [produtos, SetProdutos] = useState([]);
             imagem: "https://a-static.mlcdn.com.br/618x463/cadeira-gamer-reclinavel-strike-healer-tm-azul-preto-travel-max/devintex/20133/45510bea357c275669690c709c596932.jpg",
             titulo: "Cadeira Gamer",
             preco: "R$ 710.10",
+            descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
+            especificacoes: "Esse produto é de ótima qualidade você não vai se arrepender jamais na sua vidinha!!"
+          },
+          {
+            id: 10001,
+            imagem: "https://images.tcdn.com.br/img/img_prod/709481/fone_ouvido_headset_gamer_microfone_led_p2_usb_adaptador_1533_1_2265657b58c372e36ee41f2d870c1c57.jpg",
+            titulo: "Fone de Ouvido Gamer",
+            preco: "R$ 109.10",
             descricao: "Esse produto é muito legal e você deve comprá-lo porque sua vida será feliz!!!",
             especificacoes: "Esse produto é de ótima qualidade você não vai se arrepender jamais na sua vidinha!!"
           }

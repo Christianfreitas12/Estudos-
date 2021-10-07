@@ -18,15 +18,16 @@ console.log(props);
             <div className='info'>
                 <div><img src={produto.imagem} /> </div>
                 <div className='info-pro'>
-                    <div><h1>{produto.titulo}</h1> </div>
-                    <div><h3>{produto.preco}</h3> </div>
+                    <div className='titulo'>{produto.titulo} </div>
+                    <div className='preco'>{produto.preco} </div>
                     <div className='desc'>
-                        <h2> Descrição </h2>
+                        <div className='descricao'> Descrição: </div>
                         <div> {produto.descricao}</div>
 
-                        <h2> Especificações </h2>
+                        <div className='esp'> Especificações: </div>
                         <div> {produto.especificacoes} </div>
                        </div>
+                       <button>Comprar</button>
                 </div>  
             </div>
             <Link to='/'>

@@ -7,7 +7,6 @@ import { Container, RemoverIcon } from './styled'
 export default function CarrinhoItem(props){
     const [produto, SetProduto] =useState(props.info);
   
-    console.log(produto)
     function alterarQtd(qtd){
         SetProduto({...produto, qtd});
 
@@ -19,6 +18,7 @@ export default function CarrinhoItem(props){
         props.onRemove(produto.id);
     }
 
+    
     return(
         <Container>
             <div> 

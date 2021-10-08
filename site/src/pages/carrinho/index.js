@@ -38,10 +38,11 @@ export default function Carrinho(){
 
     return(
         <Container>
+            <div className='cont'> 
             <h1>Carrinho </h1>
 
             <Link to='/'>Voltar </Link>
-
+            </div>
             <div className='itens'>
                 {produto.map(item =>
                 <CarrinhoItem key={item.id}

@@ -1,7 +1,9 @@
 
 import { useState } from 'react'
 import {Container} from './styled'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
+import Cookie from 'js-cookie'
+
 
 
 
@@ -10,8 +12,26 @@ import {Link} from 'react-router-dom'
 
 export default function Detalhes(props){
 const [produto, SetProduto] = useState(props.location.state); 
+const navigation = useHistory();
 
-console.log(props);
+
+function comprar(){
+    let carrinho = Cookie.get('carrinho');
+    carrinho = carrinho != undefined ? JSON.parse(carrinho) : [];
+
+    if (carrinho.some(item => item.id == produto.id) ==false)
+        carrinho.push({...produto, qtd: 1});
+
+    Cookie.set('carrinho', JSON.stringify(carrinho));
+    
+    navigation.push('/carrinho')
+}
+
+
+
+
+
+
     return(
         <Container>
             <h1>Detalhes Produto</h1>
@@ -27,7 +47,7 @@ console.log(props);
                         <div className='esp'> Especificações: </div>
                         <div> {produto.especificacoes} </div>
                        </div>
-                       <button>Comprar</button>
+                       <button onClick={comprar}>Comprar</button>
                 </div>  
             </div>
             <Link to='/'>

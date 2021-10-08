@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-padding: 2em 1em 2em 1em;
+padding: 2em 1em 2em 5em;
 
 .conteudo-box{
     display: flex;

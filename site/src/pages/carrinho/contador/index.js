@@ -35,8 +35,10 @@ const Container = styled.div`
 
 
 export default function Contador(props){
-    const [qtd, SetQtd] = useState(props.valeu);
+    const [qtd, SetQtd] = useState(props.value);
 
+    // console.log(props)
+     console.log(qtd);
     function incrementar(){
         if(qtd >= 10)
         return;
